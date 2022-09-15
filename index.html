@@ -5,93 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"  />
     <style>
-        html{
-            scroll-behavior: smooth;
-        }
-        body{
-            margin: 0px;
-        }
-        h1{
-            font-size: 60px;
-            text-align: center;
-            background-color: aqua;
-            width: 50%;
-            border-radius: 20px;
-            transform: translate(50%);
-            
-        }   
-        h2{
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif
+    }
+    .banner{
+        height: 100vh;
+        width: 100%;
+        background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(2.jpeg.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    .navbar{
+        display: flex;
+        width: 90%;
+        margin: auto;
+        padding: 32px 0;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo{
+        cursor: pointer;
+        border-radius: 50%;
+    }
+    .navbar ul li{
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 25px;
 
-            font-size: 50px;
-            margin-top: 100px;
-            text-align: center;
-            background-color:rgb(102, 0, 255);
-            width: 50%;
-            border-radius: 20px;
-            transform: translate(50%);
-        }
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .navbar ul li a:hover{
+        box-shadow: 0px 2px red;
+        transition: 1s;
+    }
 
-        h3{
-            font-size: 50px;
-            margin-top: 100px;
-            text-align: center;
-            background-color: rgb(0, 140, 255);
-            width: 50%;
-            border-radius: 20px;
-            transform: translate(50%);
-        }
+    .content{
+        width: 100%;
+        position: absolute;
+        top: 40%;
+        color: #fff;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 65px;
 
-        h4{
-            font-size: 50px;
-            margin-top: 100px;
-            text-align: center;
-            background-color: rgb(234, 255, 0);
-            width: 50%;
-            border-radius: 20px;
-            transform: translate(50%);
-        }
-        div{
-            font-size: 50px;
-            margin-top: 100px;
-            background-color:rgb(226, 150, 43);
-            text-align: center;
-            width: 50%;
-            border-radius: 20px;
-            transform: translate(50%);
-        }
-        
-        #backtotop{
-            position: fixed;
-            bottom: 10px;
-            right: 10px;
-        }
-        #backtotop i {
-            color: rgb(255, 0, 21);
-            font-size: 50px;
-        }
-        #backtotop i:hover{
-            color: aqua;
-        }
-        
+    }
+    .content p{
+        margin: 20px auto;
+    }
+    button{
+        width: 200px;
+        padding: 15px 0;
+        border-radius: 35px;
+        margin: 20px;
+        text-align: center;
+        color: #fff;
+        cursor: pointer;
+        font-weight: 600;
+        background-color: #6166b3;
+        font-size: 17px;
+    }
+    button:hover{
+        color: black;
+        transition: 1s;
+
+
+    }
+
+
     </style>
 </head>
-<body id="body">
-    <h1>This is heading </h1>
-
-    <h2>Lorem ipsum dolor sit amet.</h2>
-
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-
-    <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure.</h4>
-
-    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-
-        <a href="#body" id="backtotop">
-            <i class="fas fa-arrow-circle-up"></i>
-        </a>
-  <br><br>
-
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <img src="1.jpeg.jpg" alt="" class="logo" width="100" height="100">
+            <ul>
+                <li><a href="#">Main menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">My projects</a></li>
+                <li><a href="#">Gallery</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Samir</h1>
+            <p>Someone who is trying to be a software developer</p>
+            <button type="button">You tube</button>
+            <button type="button">Instagram</button>
+        </div>
+    </div>
 </body>
 </html>
